@@ -1,0 +1,33 @@
+
+[
+  {
+    "user":"Jennifer B",
+    "img":"/assets/userWomen.png",
+    "comment":"Little Learners Academy has been a second home for my child. The caring staff and engaging programs have made her excited to go to school every day!",
+    "rating":"/assets/stars.png"
+  },
+  {
+    "user":"David K",
+    "img":"/assets/human2.png",
+    "comment":"Choosing Little Learners Academy for my daughter was the best decision. She has thrived in their nurturing and stimulating environment.",
+    "rating":"/assets/stars.png"
+  },
+  {
+    "user":"Emily L",
+    "img":"/assets/human3.png",
+    "comment":"My son's social and academic growth has been remarkable since joining Little Learners Academy. I am grateful for the supportive and dedicated teachers.",
+    "rating":"/assets/stars.png"
+  },
+  {
+    "user": "Sophia W",
+    "img": "/assets/userWomen.png",
+    "comment": "The warm environment and thoughtful programs have made a world of difference in my daughter's education. She loves going to school every day!",
+    "rating": "/assets/stars.png"
+  },
+  {
+    "user": "James K",
+    "img": "/assets/human2.png",
+    "comment": "Little Learners Academy has been exceptional. The curriculum and teachers have inspired a passion for learning in my son.",
+    "rating": "/assets/stars.png"
+  }
+]
