@@ -13,6 +13,10 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
     },
+    screens: {
+      sm: { max: "639px" },
+      // => @media (max-width: 639px) { ... }
+    },
   },
   plugins: [],
 };

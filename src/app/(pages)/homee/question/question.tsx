@@ -18,10 +18,10 @@ export default function Question() {
         <button className="text-[16px] bg-white border-[2px] border-black p-[8px] rounded-[6px] font-medium text-[#333333]">
           Solutions For The Doubts
         </button>
-        <h3 className="text-[48px] text-[#1a1a1a] font-bold py-[6px]">
+        <h3 className="text-[48px] text-[#1a1a1a] font-bold py-[6px] sm:text-[38px] sm:text-center">
           Frequently Asked Questions
         </h3>
-        <p className="text-[16px] font-medium text-[#333333] w-[880px] text-center pt-[7px]">
+        <p className="text-[16px] font-medium text-[#333333] w-[880px] text-center pt-[7px] sm:w-full">
           Find all the essential information you need in our FAQ section, designed to address the most frequently asked
           questions and help you make informed decisions for your childs education.
         </p>
@@ -32,9 +32,8 @@ export default function Question() {
             key={index}
             className="w-[620px] h-auto border-[2px] border-black rounded-[10px] px-[35px] bg-[#ffefe5] mb-[20px] flex flex-col"
           >
-            {/* Question text */}
-            <div className="flex justify-between items-center py-[20px]">
-              <p>{res.question}</p>
+            <div className="flex justify-between items-center py-[20px]  ">
+              <p className='sm:w-[258px]'>{res.question}</p>
               <div
                 onClick={() => handleShow(index)}
                 className="w-[32px] h-[32px] border-[2px] border-black rounded-[4px] flex items-center justify-center bg-[#fff5f0] cursor-pointer"
