@@ -45,7 +45,7 @@ export default function Support() {
           </div>
           <p className=' text-[28px] font-bold pb-[24px] w-[100%]'>Teacher Collaboration</p>
           <p className='text-[20px] font-medium pb-[20px] w-[100%]'>
-          We foster a strong partnership with parents to ensure seamless communication  support in a child's.
+          We foster a strong partnership with parents to ensure seamless communication  support in a childs.
           </p>
         </div>
         
