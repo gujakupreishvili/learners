@@ -17,8 +17,8 @@ export default function Mission() {
         We are here to provide a nurturing and inclusive environment where young minds can thrive, fostering a love for learning and personal growth.
         </p>
       </div>
-      <div className='flex gap-[60px] mb-[70px]'>
-        <div className='flex flex-col bg-white border-[2px] border-black rounded-[10px] w-[80%] px-[25px] py-[20px] shadow-[4px_4px_0px_1px_#1e1e1e] '>
+      <div className='flex gap-[60px] mb-[70px] sm:flex-col sm:justify-center sm:items-center '>
+        <div className='flex flex-col bg-white border-[2px] border-black rounded-[10px] w-[80%] sm:w-[100%] px-[25px] py-[20px] shadow-[4px_4px_0px_1px_#1e1e1e] '>
           <div className='flex justify-between items-center'>
             <h3 className='text-[38px] font-bold'>Mission</h3>
             <Image src={mountain} alt='mountain' />
@@ -32,7 +32,7 @@ export default function Mission() {
            and emotionally, setting the stage for a successful educational journey.
           </p>
         </div>
-        <div  className='flex flex-col bg-white border-[2px] border-black rounded-[10px] w-[80%] px-[25px] py-[20px] shadow-[4px_4px_0px_1px_#1e1e1e]'>
+        <div  className='flex flex-col bg-white border-[2px] border-black rounded-[10px] w-[80%] sm:w-[100%] px-[25px] py-[20px] shadow-[4px_4px_0px_1px_#1e1e1e]'>
         <div className='flex justify-between items-center'>
             <h3 className='text-[38px] font-bold'>Vision</h3>
             <Image src={vision} alt='mountain' />

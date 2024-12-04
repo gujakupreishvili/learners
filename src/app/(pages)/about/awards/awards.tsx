@@ -1,33 +1,29 @@
 "use client"
 import React from 'react';
-import { FaAward, FaTrophy, FaMedal, FaArrowLeft, FaArrowRight } from 'react-icons/fa'; // Import necessary icons
-import awardJsonRaw from '../../../data/awards.json'; // Import raw JSON
+import { FaAward, FaTrophy, FaMedal, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import awardJsonRaw from '../../../data/awards.json';
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper/modules'
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-// Define the structure of your JSON data
 interface Award {
-  icon: keyof typeof iconMap; // Restrict the type to the keys of iconMap
+  icon: keyof typeof iconMap;
   name: string;
   description: string;
 }
 
-// Map icons to their respective names in the JSON
+
 const iconMap = {
   FaAward,
   FaTrophy,
   FaMedal,
 };
-
-// Explicitly cast the JSON to the Award[] type
 const awardJson = awardJsonRaw as Award[];
 
 export default function Awards() {
   return (
     <div>
-      {/* Header Section */}
       <div className="flex flex-col justify-center items-center mb-[40px] mt-[70px]">
         <button className="text-[16px] bg-white border-[2px] border-black p-[8px] rounded-[6px] font-medium text-[#333333]">
           Our Achievements
@@ -42,8 +38,6 @@ export default function Awards() {
           learning environment for our students.
         </p>
       </div>
-
-      {/* Awards Section */}
       <Swiper
       breakpoints={{
         640: {
@@ -62,7 +56,7 @@ export default function Awards() {
         const IconComponent = iconMap[res.icon];
         return (
           <SwiperSlide key={index}>
-            <div className='w-[400px] sm:w-full bg-white border-[2px] border-black rounded-[10px] px-[15px] mt-[55px] shadow-[4px_4px_0px_2px_#1e1e1e] h-[322px] mb-[20px]' >
+            <div className='w-[400px] sm:w-full bg-white border-[2px] border-black rounded-[10px] px-[15px] mt-[55px] shadow-[4px_4px_0px_2px_#1e1e1e] h-[322px] mb-[20px] ' >
               <div className="text-[28px] text-[#1a1a1a] mb-[16px] w-[56px] h-[56px] bg-[#ffdecc] flex justify-center items-center border-[2px] border-black rounded-[8px] mt-[-30px] z-10">
                 {IconComponent ? <IconComponent /> : null}
               </div>
@@ -84,12 +78,12 @@ export default function Awards() {
         </p>
         <div className='flex  mr-[40px]'>
           <div 
-          className='bg-white border-[2px] border-black rounded-[8px] w-[48px] h-[48px] flex items-center justify-center cursor-pointer sm:w-[190px] sm:ml-[8px] mr-[10px]'
+          className='bg-white border-[2px] border-black rounded-[8px] w-[48px] h-[48px] flex items-center justify-center cursor-pointer   mr-[10px]'
           id='prev-btn'>
           <FaArrowLeft />
           </div>
           <div
-          className='bg-white border-[2px] border-black rounded-[8px] w-[48px] h-[48px] flex items-center justify-center cursor-pointer sm:w-[190px] sm:ml-[8px]'
+          className='bg-white border-[2px] border-black rounded-[8px] w-[48px] h-[48px] flex items-center justify-center cursor-pointer '
            id='next-btn'>
             <FaArrowRight />
           </div>
