@@ -1,0 +1,42 @@
+[
+  {
+    "icon": "FaAward",
+    "name": "Outstanding Early Childhood Education Award",
+    "description": "Presented by the National Association for the Education of Young Children (NAEYC) in recognition of Little Learners Academy's commitment to delivering exceptional early childhood education and fostering a nurturing learning environment."
+  },
+  {
+    "icon": "FaTrophy",
+    "name": "Excellence in Teaching Award",
+    "description": "Awarded by the International Educators Association in recognition of our innovative teaching methodologies and their positive impact on early childhood education."
+  },
+  {
+    "icon": "FaMedal",
+    "name": "Community Engagement Award",
+    "description": "Acknowledged for our active involvement and meaningful contributions to local community projects, fostering connections and support among families and educators."
+  },
+  {
+    "icon": "FaAward",
+    "name": "Best Preschool Curriculum Design Award",
+    "description": "Recognized for developing an engaging and age-appropriate curriculum that supports children’s growth in cognitive, social, and creative areas effectively."
+  },
+  {
+    "icon": "FaTrophy",
+    "name": "Innovative Learning Techniques Award",
+    "description": "Celebrated for employing advanced teaching strategies that encourage creativity, collaboration, and critical thinking in young learners, creating lasting benefits."
+  },
+  {
+    "icon": "FaMedal",
+    "name": "Parent Satisfaction Excellence Award",
+    "description": "Awarded for consistently achieving high levels of parent satisfaction through effective communication, meaningful engagement, and outstanding care for students."
+  },
+  {
+    "icon": "FaAward",
+    "name": "Safe and Inclusive Learning Environment Award",
+    "description": "Recognized for fostering a secure, welcoming, and inclusive learning environment that celebrates diversity and ensures the well-being of all children."
+  },
+  {
+    "icon": "FaTrophy",
+    "name": "Top Local Preschool Award",
+    "description": "Voted as the best preschool in the area for providing high-quality educational programs and demonstrating exceptional commitment to early childhood development."
+  }
+]
