@@ -3,11 +3,26 @@ import rect from "../../../../../public/assets/rect.png"
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaArrowRight } from 'react-icons/fa'
+import {motion} from 'framer-motion'
 
 export default function Navigate() {
   return (
     <div className='mt-[60px] mb-[60px]'>
-      <div className="flex flex-col justify-center items-center mb-[40px] mt-[70px]">
+      <motion.div
+         initial={{
+          opacity:0
+        }}
+        whileInView={{
+          opacity:1,
+          scale:1.1,
+          transition:{
+            duration:2
+          }
+        }}
+        viewport={{
+          margin:"-100px 0px 400px 0px"
+        }}
+       className="flex flex-col justify-center items-center mb-[40px] mt-[70px]">
         <button className="text-[16px] bg-white border-[2px] border-black p-[8px] rounded-[6px] font-medium text-[#333333]">
         Explore More
         </button>
@@ -17,8 +32,22 @@ export default function Navigate() {
         <p className="text-[16px] font-medium text-[#333333] w-[880px] text-center pt-[7px] sm:w-full">
         Your gateway to discovering a wealth of valuable information about our kindergarten school, Feel free to explore and learn more about the enriching experiences that await your child at our kindergarten school
         </p>
-      </div>
-      <div className='mt-[90px] flex flex-wrap justify-center gap-[50px]'>
+      </motion.div>
+      <motion.div
+         initial={{
+          opacity:0
+        }}
+        whileInView={{
+          opacity:1,
+          scale:1.05,
+          transition:{
+            duration:2
+          }
+        }}
+        viewport={{
+          margin:"-100px 0px 400px 0px"
+        }}
+       className='mt-[90px] flex flex-wrap justify-center gap-[50px]'>
       <div className='w-[620px]  bg-white flex flex-col items-center justify-center border-[2px] border-black  shadow-[4px_4px_0px_2px_#262626] rounded-[10px] py-[40px] gap-[30px] px-[40px] sm:w-full '>
         <h1 className='text-[34px]  text-[#1a1a1a] font-bold'>About Us</h1>
         <Image src={rect} alt="" />
@@ -45,7 +74,7 @@ export default function Navigate() {
       <p className='flex items-center justify-center text-[18px] font-medium text-[#333333]'> Learn More <span className='pl-[10px]'><FaArrowRight /></span></p>
       </Link>
       </div>
-      </div>
+      </motion.div>
     </div>
   )
 }

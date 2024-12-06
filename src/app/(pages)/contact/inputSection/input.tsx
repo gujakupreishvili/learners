@@ -3,6 +3,7 @@ import { validation } from "@/app/utils/validationSchema";
 import { useFormik } from "formik";
 import React, { useState } from "react";
 import { FaCheck, FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+import {motion} from 'framer-motion'
 
 const initialValues = {
   parentname: "",
@@ -46,7 +47,21 @@ export default function Input() {
 
   return (
     <div>
-      <div className="flex flex-col justify-center items-center mb-[40px] mt-[120px]">
+      <motion.div 
+          initial={{
+            opacity:0
+            }}
+            whileInView={{
+            opacity:1,
+            scale:1.05,
+            transition:{
+            duration:2
+            }
+            }}
+            viewport={{
+            margin:"-100px 0px 400px 0px"
+            }}
+      className="flex flex-col justify-center items-center mb-[40px] mt-[120px]">
         <button className="text-[16px] bg-white border-[2px] border-black p-[8px] rounded-[6px] font-medium text-[#333333]">
           Contact Form
         </button>
@@ -59,10 +74,24 @@ export default function Input() {
           below. Kindly provide the following details to help us better
           understand your needs.
         </p>
-      </div>
+      </motion.div>
       {
         !isSubmitted ? 
-        <div className="bg-white border-[2px] border-black shadow-[6px_6px_0px_1px_#1e1e1e] rounded-[12px] mt-[100px] mb-[70px] px-[30px] sm:w-full">
+        <motion.div
+        initial={{
+          opacity:0
+          }}
+          whileInView={{
+          opacity:1,
+          scale:1.05,
+          transition:{
+          duration:2
+          }
+          }}
+          viewport={{
+          margin:"-100px 0px 400px 0px"
+          }}
+         className="bg-white border-[2px] border-black shadow-[6px_6px_0px_1px_#1e1e1e] rounded-[12px] mt-[100px] mb-[70px] px-[30px] sm:w-full">
         <div className="flex items-center gap-[12px] mt-[-20px] justify-center">
           <div className="w-[126px] h-[48px] sm:w-[74px] sm:h-[58px] border-[2px] border-black rounded-[8px] flex justify-center items-center bg-[#ffdecc]">
             <FaFacebook className="w-[24px] h-[24px]" />
@@ -194,7 +223,7 @@ export default function Input() {
             Submit
           </button>
         </form>
-      </div>
+      </motion.div>
          :  <div className="flex flex-col  gap-[30px] items-center justify-center mt-[70px]">
          <div className="bg-[#ffae80] w-[100px] h-[100px] rounded-[50px] flex items-center justify-center  shadow-[6px_6px_0px_1px_#1e1e1e]">
          <FaCheck  className="text-[25px]"/>

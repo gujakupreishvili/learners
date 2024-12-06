@@ -1,11 +1,26 @@
 import React from 'react'
 import cubs from "../../../../../public/assets/about/cubs.png"
 import Image from 'next/image'
+import {motion} from "framer-motion"
 
 export default function History() {
   return (
     <>
-        <div className="flex flex-col justify-center items-center mb-[40px] mt-[70px]">
+        <motion.div
+            initial={{
+              opacity:0
+              }}
+              whileInView={{
+              opacity:1,
+              scale:1.05,
+              transition:{
+              duration:2
+              }
+              }}
+              viewport={{
+              margin:"-100px 0px 400px 0px"
+              }}
+         className="flex flex-col justify-center items-center mb-[40px] mt-[70px]">
         <button className="text-[16px] bg-white border-[2px] border-black p-[8px] rounded-[6px] font-medium text-[#333333]">
         Our Progressive Journey
         </button>
@@ -19,8 +34,22 @@ export default function History() {
          through innovative teaching methods and a supportive
           learning environment
         </p>
-      </div>
-    <div className='bg-[white] py-[70px] px-[90px] sm:px-[20px]   flex flex-col gap-[70px] border-[2px] border-black rounded-[12px] shadow-[6px_6px_0px_2px_#1e1e1e] mb-[50px]'>
+      </motion.div>
+    <motion.div
+        initial={{
+          opacity:0
+          }}
+          whileInView={{
+          opacity:1,
+          scale:1.01,
+          transition:{
+          duration:2
+          }
+          }}
+          viewport={{
+          margin:"-100px 0px 400px 0px"
+          }}
+     className='bg-[white] py-[70px] px-[90px] sm:px-[20px]   flex flex-col gap-[70px] border-[2px] border-black rounded-[12px] shadow-[6px_6px_0px_2px_#1e1e1e] mb-[50px]'>
       <div className='flex gap-[150px] sm:flex-col sm:gap-[50px]'>
         <div className='bg-white flex items-center justify-between gap-[20px] px-[28px]  py-[28px] w-[295px] border-[2px] border-black rounded-[12px] shadow-[4px_4px_0px_2px_#1e1e1e]'>
           <Image  src={cubs} alt='cubs' className='w-[60px] h-[60px]'/>
@@ -64,7 +93,7 @@ export default function History() {
           <p>Established in 2005, our kindergarten school began its journey with a vision to provide a nurturing space for young minds to explore, learn, and grow. Over the next five years, we witnessed significant growth. </p>
         </div>
       </div>
-    </div>
+    </motion.div>
     
     </>
   )

@@ -3,11 +3,26 @@ import { FaBolt, FaPaintBrush } from 'react-icons/fa'
 import { HiBeaker } from 'react-icons/hi'
 import { HiPuzzlePiece } from 'react-icons/hi2'
 import { IoMusicalNotes, IoSparkles } from 'react-icons/io5'
+import {motion} from 'framer-motion'
 
 export default function Activities() {
   return (
     <div>
-       <div className="flex flex-col justify-center items-center mb-[40px] mt-[70px]">
+       <motion.div
+           initial={{
+            opacity:0
+            }}
+            whileInView={{
+            opacity:1,
+            scale:1.05,
+            transition:{
+            duration:2
+            }
+            }}
+            viewport={{
+            margin:"-100px 0px 400px 0px"
+            }}
+        className="flex flex-col justify-center items-center mb-[40px] mt-[70px]">
         <button className="text-[16px] bg-white border-[2px] border-black p-[8px] rounded-[6px] font-medium text-[#333333]">
         Our Progressive Journey
         </button>
@@ -21,8 +36,22 @@ export default function Activities() {
          through innovative teaching methods and a supportive
           learning environment
         </p>
-      </div>
-      <div className='flex flex-wrap gap-[4%] sm:flex-col'>
+      </motion.div>
+      <motion.div
+          initial={{
+            opacity:0
+            }}
+            whileInView={{
+            opacity:1,
+            scale:1.01,
+            transition:{
+            duration:2
+            }
+            }}
+            viewport={{
+            margin:"-100px 0px 400px 0px"
+            }}
+       className='flex flex-wrap gap-[4%] sm:flex-col'>
         <div className='border-[2px] border-black rounded-[12px] shadow-[6px_6px_0px_2px_#1e1e1e] px-[25px] bg-white w-[30%] sm:w-[100%] mb-[50px] mt-[70px]'>
           <div className='border-[2px] border-black rounded-[12px] bg-[#ffdecc] w-[74px] h-[74px] flex items-center justify-center mt-[-30px] mb-[37px] '>
           <FaBolt className='text-[20px]' />
@@ -101,7 +130,7 @@ export default function Activities() {
              theater performances.
           </p>
         </div>
-      </div>
+      </motion.div>
       
     </div>
   )

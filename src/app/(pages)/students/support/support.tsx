@@ -2,10 +2,25 @@ import React from 'react'
 import { FaLightbulb } from 'react-icons/fa'
 import { IoBook } from 'react-icons/io5'
 import { MdGroups2 } from 'react-icons/md'
+import {motion} from 'framer-motion'
 
 export default function Support() {
   return (
-    <div className='mt-[70px]'>
+    <motion.div
+    initial={{
+      opacity:0
+      }}
+      whileInView={{
+      opacity:1,
+      scale:1.05,
+      transition:{
+      duration:2
+      }
+      }}
+      viewport={{
+      margin:"-100px 0px 400px 0px"
+      }}
+     className='mt-[70px]'>
         <div className="flex flex-col justify-center items-center mb-[40px] mt-[70px]">
         <button className="text-[16px] bg-white border-[2px] border-black p-[8px] rounded-[6px] font-medium text-[#333333]">
         Our Achievements
@@ -52,6 +67,6 @@ export default function Support() {
 
       </div>
       
-    </div>
+    </motion.div>
   )
 }

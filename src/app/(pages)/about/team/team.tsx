@@ -2,11 +2,26 @@ import React from 'react'
 import teamJson from "./../../../data/team.json"
 import Image from 'next/image'
 import { FaEnvelope } from 'react-icons/fa'
+import {motion} from 'framer-motion'
 
 export default function Team() {
   return (
     <div>
-      <div className="flex flex-col justify-center items-center mb-[40px] mt-[70px] ">
+      <motion.div
+          initial={{
+            opacity:0
+            }}
+            whileInView={{
+            opacity:1,
+            scale:1.05,
+            transition:{
+            duration:2
+            }
+            }}
+            viewport={{
+            margin:"-100px 0px 400px 0px"
+            }}
+       className="flex flex-col justify-center items-center mb-[40px] mt-[70px] ">
         <button className="text-[16px] bg-white border-[2px] border-black p-[8px] rounded-[6px] font-medium text-[#333333]">
         Our Teachers With Experties
         </button>
@@ -21,8 +36,22 @@ export default function Team() {
          atmosphere, encouraging curiosity,
          instilling confidence, and fostering a love for learning.
         </p>
-      </div>
-      <div className='flex flex-wrap sm:flex-col gap-[50px] justify-center mb-[80px] mt-[50px]'>
+      </motion.div>
+      <motion.div
+          initial={{
+            opacity:0
+            }}
+            whileInView={{
+            opacity:1,
+            scale:1.01,
+            transition:{
+            duration:2
+            }
+            }}
+            viewport={{
+            margin:"-100px 0px 400px 0px"
+            }}
+       className='flex flex-wrap sm:flex-col gap-[50px] justify-center mb-[80px] mt-[50px]'>
         {teamJson.map((res,index)=>(
           <div key={index} className='bg-white px-[50px] py-[20px] w-[40%] sm:w-[100%] border-[2px] border-black  shadow-[4px_4px_0px_1px_#1e1e1e] rounded-[10px] '>
             <div className='flex items-center justify-between '>
@@ -39,7 +68,7 @@ export default function Team() {
           </div>
 
         ))}
-      </div>
+      </motion.div>
       
     </div>
   )

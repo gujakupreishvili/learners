@@ -6,6 +6,8 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation } from 'swiper/modules'
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { motion } from "motion/react"
+import { easeInOut } from 'motion'
 
 interface Award {
   icon: keyof typeof iconMap;
@@ -24,7 +26,21 @@ const awardJson = awardJsonRaw as Award[];
 export default function Awards() {
   return (
     <div>
-      <div className="flex flex-col justify-center items-center mb-[40px] mt-[70px]">
+      <motion.div
+          initial={{
+            opacity:0
+            }}
+            whileInView={{
+            opacity:1,
+            scale:1.05,
+            transition:{
+            duration:2
+            }
+            }}
+            viewport={{
+            margin:"-100px 0px 400px 0px"
+            }}
+       className="flex flex-col justify-center items-center mb-[40px] mt-[70px]">
         <button className="text-[16px] bg-white border-[2px] border-black p-[8px] rounded-[6px] font-medium text-[#333333]">
           Our Achievements
         </button>
@@ -37,7 +53,22 @@ export default function Awards() {
           early childhood education. These accolades reflect our teams relentless efforts in creating an exceptional
           learning environment for our students.
         </p>
-      </div>
+      </motion.div>
+      <motion.div
+          initial={{
+            opacity:0
+            }}
+            whileInView={{
+            opacity:1,
+            scale:1.05,
+            transition:{
+            duration:2
+            }
+            }}
+            viewport={{
+            margin:"-100px 0px 400px 0px"
+            }}
+      >
       <Swiper
       breakpoints={{
         640: {
@@ -71,22 +102,30 @@ export default function Awards() {
         );
       })}
     </Swiper>
+
+      </motion.div>
       <div className='flex justify-between mt-[20px] mb-[50px]'>
         <p className='text-[18px] font-bold'>
        {awardJson.length}
        <span>More Awards</span>
         </p>
         <div className='flex  mr-[40px]'>
-          <div 
+          <motion.div 
+          whileHover={{scale:1.05}}
+          whileTap={{scale:0.95, rotate:"-2.5deg"}}
+          transition={{duration:0.125,ease:easeInOut}}
           className='bg-white border-[2px] border-black rounded-[8px] w-[48px] h-[48px] flex items-center justify-center cursor-pointer   mr-[10px]'
           id='prev-btn'>
           <FaArrowLeft />
-          </div>
-          <div
+          </motion.div>
+          <motion.div
+          whileHover={{scale:1.05}}
+          whileTap={{scale:0.95, rotate:"2.5deg"}}
+          transition={{duration:0.125,ease:easeInOut}}
           className='bg-white border-[2px] border-black rounded-[8px] w-[48px] h-[48px] flex items-center justify-center cursor-pointer '
            id='next-btn'>
             <FaArrowRight />
-          </div>
+          </motion.div>
         </div>
       </div>
 

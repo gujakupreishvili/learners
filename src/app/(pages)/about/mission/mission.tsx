@@ -2,11 +2,26 @@ import React from 'react'
 import mountain from "../../../../../public/assets/about/mount.png"
 import vision from "../../../../../public/assets/about/vision.png"
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 
 export default function Mission() {
   return (
     <div className='mt-[100px]'>
-      <div className="flex flex-col justify-center items-center mb-[40px] mt-[70px] ">
+      <motion.div
+          initial={{
+            opacity:0
+            }}
+            whileInView={{
+            opacity:1,
+            scale:1.05,
+            transition:{
+            duration:2
+            }
+            }}
+            viewport={{
+            margin:"-100px 0px 400px 0px"
+            }}
+       className="flex flex-col justify-center items-center mb-[40px] mt-[70px] ">
         <button className="text-[16px] bg-white border-[2px] border-black p-[8px] rounded-[6px] font-medium text-[#333333]">
         Mission & Visions
         </button>
@@ -16,8 +31,22 @@ export default function Mission() {
         <p className="text-[16px] font-medium text-[#333333] w-[880px] text-center pt-[7px] sm:w-full">
         We are here to provide a nurturing and inclusive environment where young minds can thrive, fostering a love for learning and personal growth.
         </p>
-      </div>
-      <div className='flex gap-[60px] mb-[70px] sm:flex-col sm:justify-center sm:items-center '>
+      </motion.div>
+      <motion.div
+          initial={{
+            opacity:0
+            }}
+            whileInView={{
+            opacity:1,
+            scale:1.05,
+            transition:{
+            duration:2
+            }
+            }}
+            viewport={{
+            margin:"-100px 0px 400px 0px"
+            }}
+       className='flex gap-[60px] mb-[70px] sm:flex-col sm:justify-center sm:items-center '>
         <div className='flex flex-col bg-white border-[2px] border-black rounded-[10px] w-[80%] sm:w-[100%] px-[25px] py-[20px] shadow-[4px_4px_0px_1px_#1e1e1e] '>
           <div className='flex justify-between items-center'>
             <h3 className='text-[38px] font-bold'>Mission</h3>
@@ -45,7 +74,7 @@ export default function Mission() {
              and a deep appreciation for diversity.
           </p>
         </div>
-      </div>  
+      </motion.div>  
     </div>
   )
 }
