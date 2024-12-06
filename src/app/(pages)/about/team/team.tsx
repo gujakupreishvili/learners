@@ -26,9 +26,9 @@ export default function Team() {
         {teamJson.map((res,index)=>(
           <div key={index} className='bg-white px-[50px] py-[20px] w-[40%] sm:w-[100%] border-[2px] border-black  shadow-[4px_4px_0px_1px_#1e1e1e] rounded-[10px] '>
             <div className='flex items-center justify-between '>
-            <Image src={res.img} width={100} height={100} alt='teammember'/>
-            <p className='pl-[20px] text-[24px] font-bold'>{res.name}</p>
-            <div className='w-[48px] h-[48px] border-[2px] border-black rounded-[8px] flex items-center justify-center bg-[#ffdecc] ml-[50px]'>
+            <Image src={res.img} width={100} height={100}  alt='teammember'/>
+            <p className='pl-[20px] text-[24px] sm:text-[18px] font-bold'>{res.name}</p>
+            <div className='w-[48px] sm:w-[80px] h-[48px] border-[2px] border-black rounded-[8px] flex items-center justify-center bg-[#ffdecc] ml-[50px]'>
             <FaEnvelope />
             </div>
             </div>

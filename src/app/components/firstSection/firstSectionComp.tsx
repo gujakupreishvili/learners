@@ -10,7 +10,7 @@ interface FirstSectionCompProps {
 
 export default function FirstSectionComp({ buttontext, h1text, ptext, imageSrc }: FirstSectionCompProps) {
   return (
-    <div className="bg-white border-[2px] border-black shadow-[6px_6px_0px_1px_#1e1e1e] rounded-[10px]">
+    <div className="bg-white border-[2px] border-black shadow-[6px_6px_0px_1px_#1e1e1e] rounded-[10px] sm:w-[100%]">
       <Image src={imageSrc} alt="frame" />
       <div className="flex px-[10%] pb-[7%] mt-[-7px]  sm:flex-col sm:justify-center sm:items-center">
         <div className=' sm:flex sm:flex-col sm:justify-center sm:items-center sm:mb-[20px]'>

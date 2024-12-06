@@ -20,7 +20,7 @@ export default function Support() {
         </p>
       </div>
       <div className='flex justify-center items-center gap-[40px] sm:flex-col'>
-      <div className='border-[2px] border-black rounded-[12px]  shadow-[6px_6px_0px_2px_#1e1e1e] px-[25px] bg-white w-[30%] sm:w-[100%] mb-[50px] mt-[70px]'>
+      <div className='border-[2px] border-black rounded-[12px]  shadow-[6px_6px_0px_2px_#1e1e1e] px-[25px] bg-white w-[30%] sm:w-[100%] mb-[50px]'>
           <div className='border-[2px] border-black rounded-[12px] bg-[#ffdecc] w-[74px] h-[74px] flex items-center justify-center mt-[-30px] mb-[37px] '>
           <FaLightbulb  className='text-[20px]' />
           </div>

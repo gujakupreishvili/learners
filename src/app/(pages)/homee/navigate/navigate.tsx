@@ -22,17 +22,8 @@ export default function Navigate() {
       <div className='w-[620px]  bg-white flex flex-col items-center justify-center border-[2px] border-black  shadow-[4px_4px_0px_2px_#262626] rounded-[10px] py-[40px] gap-[30px] px-[40px] sm:w-full '>
         <h1 className='text-[34px]  text-[#1a1a1a] font-bold'>About Us</h1>
         <Image src={rect} alt="" />
-        <p className='text-center text-[16px] font-medium text-[#4c4c4d]'>Discover our Mission, Values, and our unwavering commitment to providing the best learning experience for your child. Learn about our passionate educators and our engaging approach to early education.</p>
-      <Link href={"/about"} className='w-[500px] bg-[#ffdecc] h-[64px] border-[2px] border-black shadow-[2px_2px_0px_2px_#1e1e1e] rounded-[8px] flex justify-center sm:w-[100%]  '>
-      <p className='flex items-center justify-center text-[18px] font-medium text-[#333333]'> Learn More <span className='pl-[10px]'><FaArrowRight /></span></p>
-      </Link>
-      </div>
-
-      <div className='w-[620px] bg-white flex flex-col items-center justify-center border-[2px] border-black  shadow-[4px_4px_0px_2px_#262626] rounded-[10px] py-[40px] gap-[30px] px-[40px] sm:w-full '>
-        <h1 className='text-[34px] text-[#1a1a1a] font-bold mt-[25px]'>Academics</h1>
-        <Image src={rect} alt="" />
-        <p className='text-center text-[16px] font-medium text-[#4c4c4d]'>Delve into our comprehensive academic programs designed to stimulate young minds, foster creativity, and encourage a love for learning. Explore our well-rounded curriculum that nurtures both intellectual and social development.</p>
-      <Link href={"/academics"} className='w-[500px] bg-[#ffdecc] h-[64px] border-[2px] border-black shadow-[2px_2px_0px_2px_#1e1e1e] rounded-[8px] flex justify-center  sm:w-[100%]  '>
+        <p className='text-center text-[16px] font-medium text-[#4c4c4d] '>Discover our Mission, Values, and our unwavering commitment to providing the best learning experience for your child. Learn about our passionate educators and our engaging approach to early education.</p>
+      <Link href={"/about"} className='w-[500px] mt-[20px] bg-[#ffdecc] h-[64px] border-[2px] border-black shadow-[2px_2px_0px_2px_#1e1e1e] rounded-[8px] flex justify-center sm:w-[100%]  '>
       <p className='flex items-center justify-center text-[18px] font-medium text-[#333333]'> Learn More <span className='pl-[10px]'><FaArrowRight /></span></p>
       </Link>
       </div>
@@ -47,9 +38,9 @@ export default function Navigate() {
       </div>
 
       <div className='w-[620px] bg-white flex flex-col items-center justify-center border-[2px] border-black  shadow-[4px_4px_0px_2px_#262626] rounded-[10px] py-[40px] gap-[30px] px-[40px] sm:w-full '>
-        <h1 className='text-[34px] text-[#1a1a1a] font-bold '>Admissions</h1>
+        <h1 className='text-[34px] text-[#1a1a1a] font-bold '>Contact</h1>
         <Image src={rect} alt="" />
-        <p className='text-center text-[16px] font-medium text-[#4c4c4d]'>Learn about our Enrollment Process and how to secure your childs place at Little Learners Academy. Find information about our admission requirements, application deadlines, and available spaces.</p>
+        <p className='text-center text-[16px] font-medium text-[#4c4c4d]'>If you have specific questions or wish to request more information about Little Learners Academy, please complete the contact form below. Kindly provide the following details to help us better understand your needs</p>
       <Link href={"/admis"} className='w-[500px] bg-[#ffdecc] mt-[25px] h-[64px] border-[2px] border-black shadow-[2px_2px_0px_2px_#1e1e1e] rounded-[8px] flex justify-center sm:w-[100%]   '>
       <p className='flex items-center justify-center text-[18px] font-medium text-[#333333]'> Learn More <span className='pl-[10px]'><FaArrowRight /></span></p>
       </Link>

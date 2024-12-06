@@ -20,7 +20,7 @@ export default function Header() {
   
 
   return (
-    <div className='flex items-center justify-between h-[70px] mx-[30px]  mt-[24px] mb-[44px] rounded-[12px] border-[2px] border-black  '>
+    <div className='flex items-center justify-between h-[70px] mx-[30px]  mt-[24px] mb-[44px] rounded-[12px] border-[2px] border-black   '>
       <div className='bg-[#FF8D4D] flex items-center h-[66px] px-[12px] gap-[6px] rounded-l-[8px] border-r-[2px] border-black '>
         <Image src={logo} alt='logo' className='w-[24px] h-[24px]' />
         <p>Little Learners</p>
@@ -42,22 +42,22 @@ export default function Header() {
         >
           about
         </Link>
-        <Link
+        {/* <Link
           href="/academics"
           className={`flex items-center justify-center h-[66px] px-[15px]  border-r-[2px] border-black  ${
             isActive("/academics") ? 'bg-[#ffefe5] text-black' : ''
           }`}
         >
           academics
-        </Link>
-        <Link
+        </Link> */}
+        {/* <Link
           href="/admis"
           className={`flex items-center justify-center h-[66px] px-[15px]  border-r-[2px] border-black  ${
             isActive("/admis") ? 'bg-[#ffefe5] text-black' : ''
           }`}
         >
           admission
-        </Link>
+        </Link> */}
         <Link
           href="/students"
           className={`flex items-center justify-center h-[66px] px-[15px]  border-r-[2px] border-black  ${
@@ -97,22 +97,22 @@ export default function Header() {
         >
           about
         </Link>
-        <Link
+        {/* <Link
           href="/academics"
           className={`flex items-center justify-center h-[66px] px-[15px]  border-b-[2px] border-black  ${
             isActive("/academics") ? 'bg-[#ffefe5] text-black' : ''
           }`}
         >
           academics
-        </Link>
-        <Link
+        </Link> */}
+        {/* <Link
           href="/admis"
           className={`flex items-center justify-center h-[66px] px-[15px]  border-b-[2px] border-black  ${
             isActive("/admis") ? 'bg-[#ffefe5] text-black' : ''
           }`}
         >
           admission
-        </Link>
+        </Link> */}
         <Link
           href="/students"
           className={`flex items-center justify-center h-[66px] px-[15px]  border-b-[2px] border-black  ${
